@@ -1,0 +1,59 @@
+# ~/.config/starship.toml
+
+add_newline = true
+command_timeout = 1000
+format = "$os$username$directory$git_branch$git_status$time$nodejs$rust\n$character"
+
+
+[os]
+format = '[$symbol](bold white) '
+disabled = false
+
+
+[os.symbols]
+Windows = ''
+Arch = '󰣇'
+Ubuntu = ''
+Macos = '󰀵'
+
+[package]
+disabled = true
+
+[git_status]
+ahead = '⇡${count}'
+diverged = '⇕⇡${ahead_count}⇣${behind_count}'
+behind = '⇣${count}'
+modified = "📝"
+stashed = '📦 '
+deleted = '🗑 '
+
+# ---y
+
+# Shows the username
+[username]
+style_user = 'white bold'
+style_root = 'black bold'
+format = '[$user]($style) '
+disabled = false
+show_always = true
+
+[aws]
+disabled = true
+
+
+# ~/.config/starship.toml
+
+[nodejs]
+format = 'using [$symbol$version](bold green)'
+
+[rust]
+format = 'using [$symbol$version]($style)'
+
+[directory]
+format = 'in [$path]($style)[$read_only]($read_only_style) '
+truncation_length = 100
+
+[time]
+disabled = false
+use_12hr = true
+format = 'at [$time]($style) '
