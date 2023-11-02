@@ -1,17 +1,10 @@
 theme = "gruvbox"
 
 [editor]
-mouse = true
-# auto-format = true
-# auto-save = true
 line-number = "relative"
+mouse = true
 cursorline = true
-color-modes = true
 bufferline = "always"
-scrolloff = 8
-soft-wrap = { enable = true }
-lsp.display-inlay-hints = true
-lsp.display-messages = true
 
 [editor.cursor-shape]
 insert = "bar"
@@ -30,6 +23,13 @@ mode.normal = "NORMAL"
 mode.insert = "INSERT"
 mode.select = "SELECT"
 
+[editor.lsp]
+display-messages = true
+display-inlay-hints = true
+
+[editor.soft-wrap]
+enable = true
+
 [editor.indent-guides]
 render = true
 
@@ -39,7 +39,6 @@ A-k = ["extend_to_line_bounds", "delete_selection", "move_visual_line_up", "past
 A-j = ["extend_to_line_bounds", "delete_selection", "move_visual_line_down", "paste_before" ]
 A-h = ["delete_selection", "move_char_left", "paste_before"]
 A-l = ["delete_selection", "paste_after"]
-
 
 [keys.insert]
 C-s = "signature_help"

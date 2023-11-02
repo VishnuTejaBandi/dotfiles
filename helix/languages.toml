@@ -24,4 +24,3 @@ workingDirectory = { mode = "auto" }
 [language-server.emmet]
 args = ["--stdio"]
 command = "emmet-language-server"
-
