@@ -1,5 +1,5 @@
-[language-server.vuels.config]
-typescript = { tsdk = "C:\\Program Files\\nodejs\\node_modules\\typescript\\lib" }
+# [language-server.vuels.config]
+# typescript = { tsdk = "C:\\Program Files\\nodejs\\node_modules\\typescript\\lib" }
 
 [language-server.eslint]
 args = ["--stdio"]
